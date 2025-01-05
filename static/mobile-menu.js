@@ -43,10 +43,7 @@ Viewport:
 //   });
 
   $(window).scroll(function () { 
-    const navbarOffset = $('.navbar').offset().top;
-    console.log("navbarOffset = " + navbarOffset)
-    console.log("scrollTop = " + $(window).scrollTop())
-    if($(window).scrollTop() >= navbarOffset){
+    if($(window).scrollTop() >= 200){
         
         $('.navbar').addClass('sticky');
     } else{

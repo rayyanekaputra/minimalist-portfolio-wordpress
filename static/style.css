@@ -15,8 +15,8 @@
 }
 
 .sticky{
-    
-    position: fixed;
+    position: sticky;
+    top: 0;
 }
 
 .footer-socials {
@@ -42,6 +42,7 @@ body {
     background-color: #fafafa;
     padding: 0px 40px;
     overflow-x: hidden;
+    position: relative;
 }
 
 li {
