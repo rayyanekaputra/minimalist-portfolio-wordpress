@@ -13,6 +13,19 @@
     column-gap: 40px;
     padding-top: 40px;
 }
+
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 0px;
+}
 /* 
 html,
 body {
