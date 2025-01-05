@@ -82,7 +82,8 @@ p.label-description {
 
 .hero-description {
     display: flex;
-    justify-content: space-between;
+    column-gap: 80px;
+    /* justify-content: space-between; */
 }
 
 .hero-cols {
@@ -92,19 +93,15 @@ p.label-description {
 }
 
 .work{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 24px;
-    flex-direction: row;
+    padding: 80px 0;
 }
+.grid{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 16px;
 
+}
 .boxes{
-    /* flex grow dan shrink yang kasih fill-containerki */
-    flex-grow: 1; 
-    flex-shrink: 0;
-    /* flex basis tosseng yang jadi besar awal */
-    flex-basis: 331px;
-    background-color: bisque;
     height: 227px;
+    background-color: #E6E6E6;
 }
