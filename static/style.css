@@ -13,15 +13,16 @@
     column-gap: 40px;
     padding-top: 40px;
 }
-
+/* 
 html,
 body {
     min-height: 100vh;
-}
+} */
 
 body {
     background-color: #fafafa;
     padding: 0px 40px;
+    overflow-x: hidden;
 }
 
 li {
@@ -82,13 +83,28 @@ p.label-description {
 .hero-description {
     display: flex;
     justify-content: space-between;
-    max-width: 950px;
-    bottom: 20px; /* Adjust based on design */
-    left: 20px;   /* Adjust based on design */
 }
 
 .hero-cols {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+}
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    flex-direction: row;
+}
+
+.boxes{
+    /* flex grow dan shrink yang kasih fill-containerki */
+    flex-grow: 1; 
+    flex-shrink: 0;
+    /* flex basis tosseng yang jadi besar awal */
+    flex-basis: 331px;
+    background-color: bisque;
+    height: 227px;
 }
