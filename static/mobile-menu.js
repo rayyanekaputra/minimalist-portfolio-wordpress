@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+    // Link Visited Navbar
+$('.navbar a').on('click', function (e) {
+  // e.preventDefault(); // Prevent default link behavior
+  $('.navbar a').removeClass('activeLink'); // Remove active class from all links
+  $(this).addClass('activeLink'); // Add active class to clicked link
+  console.log('Link clicked:', $(this).attr('href')); // Log clicked link
+});
+
+
+
   /* 
     
     logikanya kalau mendeteksi dia inview, harus ketemu "element" atau section dengan viewport yang keliatan

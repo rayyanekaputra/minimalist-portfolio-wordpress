@@ -12,29 +12,31 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <ul class="navbar">
-        <li><a href="./index.html">
-                <h2>Home</h2>
-            </a></li>
-        <li><a href="#Work">
-                <h2>Work</h2>
-            </a></li>
-        <li><a href="#footer">
-                <h2>Contact</h2>
-            </a></li>
-    </ul>
-    <ul class="navbar-mobile">
-        <li><a href="./index.html">
-                <h2>Home</h2>
-            </a></li>
-        <li><a href="#Work">
-                <h2>Work</h2>
-            </a></li>
-        <li><a href="#footer">
-                <h2>Contact</h2>
-            </a></li>
-    </ul>
+ <!-- Navbar -->
+<ul class="navbar sticky">
+    <li>
+        <h2><a href="./index.html" class="activeLink">Home</a></h2>
+    </li>
+    <li>
+        <h2><a href="#work">Work</a></h2>
+    </li>
+    <li>
+        <h2><a href="#footer">Contact</a></h2>
+    </li>
+</ul>
+<ul class="navbar-mobile">
+    <li>
+        <h2><a href="./index.html">Home</a></h2>
+    </li>
+    <li>
+        <h2><a href="#work">Work</a></h2>
+    </li>
+    <li>
+        <h2><a href="#footer">Contact</a></h2>
+    </li>
+</ul>
+
+
     <!-- Hero  -->
     <section class="hero">
         <h1>Rayyan Eka Putra</h1>
@@ -63,7 +65,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section class="work grid">
+    <section class="work grid" id="work">
         <div class="boxes">Box 1</div>
         <div class="boxes">Box 2</div>
         <div class="boxes">Box 3</div>
@@ -83,7 +85,7 @@
 
     </section>
     <!-- footer -->
-    <section class="footer">
+    <section class="footer" id="footer">
         <ul class="footer-socials">
             <li><a href="https://www.linkedin.com/in/rayyan-eka-putra/" target="_blank">
                     <p>Linkedin</p>
