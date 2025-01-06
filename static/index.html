@@ -9,36 +9,43 @@
     <link rel="stylesheet" href="./mobile-style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+" rel="stylesheet">
+
 </head>
 
-<body>
- <!-- Navbar -->
-<ul class="navbar sticky">
-    <li>
-        <h2><a href="./index.html" class="activeLink">Home</a></h2>
-    </li>
-    <li>
-        <h2><a href="#work">Work</a></h2>
-    </li>
-    <li>
-        <h2><a href="#footer">Contact</a></h2>
-    </li>
-</ul>
-<ul class="navbar-mobile">
-    <li>
-        <h2><a href="./index.html">Home</a></h2>
-    </li>
-    <li>
-        <h2><a href="#work">Work</a></h2>
-    </li>
-    <li>
-        <h2><a href="#footer">Contact</a></h2>
-    </li>
-</ul>
+<body data-scroll-container>
+    <!-- Navbar -->
+    <ul class="navbar sticky">
+        <li>
+            <h2><a href="#home" class="activeLink">Home</a></h2>
+        </li>
+        <li>
+            <h2><a href="#work" id="workId">Work</a></h2>
+        </li>
+        <li>
+            <h2><a href="#footer">Contact</a></h2>
+        </li>
+    </ul>
+    <ul class="navbar-mobile">
+        <li>
+            <h2><a href="./index.html">Home</a></h2>
+        </li>
+        <li>
+            <h2><a href="#work">Work</a></h2>
+        </li>
+        <li>
+            <h2><a href="#footer">Contact</a></h2>
+        </li>
+    </ul>
 
 
     <!-- Hero  -->
-    <section class="hero">
+    <section data-scroll-section class="hero" id="home">
         <h1>Rayyan Eka Putra</h1>
         <div class="hero-description">
             <div class="hero-cols 1">
@@ -65,7 +72,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section class="work grid" id="work">
+    <section data-scroll-section class="work grid" id="work">
         <div class="boxes">Box 1</div>
         <div class="boxes">Box 2</div>
         <div class="boxes">Box 3</div>
@@ -85,7 +92,7 @@
 
     </section>
     <!-- footer -->
-    <section class="footer" id="footer">
+    <section data-scroll-section class="footer" id="footer">
         <ul class="footer-socials">
             <li><a href="https://www.linkedin.com/in/rayyan-eka-putra/" target="_blank">
                     <p>Linkedin</p>
@@ -100,7 +107,7 @@
         <p class="credit">proudly created by rayyan ©</p>
     </section>
 
-    <script src="mobile-menu.js" />
+    <script src="navbarAndScrolls.js" />
 </body>
 
 </html>
