@@ -67,18 +67,14 @@ h1 {
     font-weight: normal;
     line-height: 100%;
     color: #333333;
-    width: 747px;
+    width: 780px;
 
 }
 
-.rayyan-container {
-    height: 500px;
-
-}
 
 .char{
     display: inline-block;
-    color: blue;
+/* supaya textnya bergerak */
 }
 
 
