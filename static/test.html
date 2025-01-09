@@ -85,12 +85,13 @@
     $('#text .char').each(function () {
       $(this).on('mouseenter', function () {
         console.log("you're in: " + $(this).text());
-        gsap.to(this, { color: 'green' });
+        gsap.to(this, { y: -15});
       });
 
       $(this).on('mouseleave', function () {
         console.log("you're leaving: " + $(this).text());
         gsap.to(this, { color: '#4e4e4e' });
+        gsap.to(this, { y: 0});
       });
     });
 

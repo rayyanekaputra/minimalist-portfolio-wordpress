@@ -71,6 +71,16 @@ h1 {
 
 }
 
+.rayyan-container {
+    height: 500px;
+
+}
+
+.char{
+    display: inline-block;
+    color: blue;
+}
+
 
 h2 {
     font-family: 'Be Vietnam Pro', sans-serif;

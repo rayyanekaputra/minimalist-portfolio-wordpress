@@ -54,17 +54,21 @@ $(document).ready(function () {
   splitText($textElementRayyan, "chars"); // Options: 'chars', 'words', 'lines'
 
   // Event listeners for the split text (now using 'char' class)
+  //$(this) itu jquery object, jadi content domnya adadi $(this)[0] tapi kalau native, cukup this isinya dom
   $("#rayyan .char").each(function () {
     $(this).on("mouseenter", function () {
-      console.log("you're in: " + $(this).text());
-      gsap.to(this, { color: "green" });
+      console.log("you're in: " + $(this).text() + " which is " + this);
+      
+      gsap.to(this, { y: 200});
     });
 
     $(this).on("mouseleave", function () {
       console.log("you're leaving: " + $(this).text());
-      gsap.to(this, { color: "#4e4e4e" });
+      gsap.to(this, { y: 0});
     });
   });
+
+
 
   // Usage
   const $textElementEka = $("#eka");
@@ -75,12 +79,12 @@ $(document).ready(function () {
   $("#eka .char").each(function () {
     $(this).on("mouseenter", function () {
       console.log("you're in: " + $(this).text());
-      gsap.to(this, { color: "green" });
+      gsap.to(this, { y: 200});
     });
 
     $(this).on("mouseleave", function () {
       console.log("you're leaving: " + $(this).text());
-      gsap.to(this, { color: "#4e4e4e" });
+      gsap.to(this, { y: 0});
     });
   });
 });
