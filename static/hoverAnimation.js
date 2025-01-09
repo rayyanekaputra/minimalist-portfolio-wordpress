@@ -60,8 +60,8 @@ $(document).ready(function () {
       console.log("you're in: " + $(this).text() + " which is " + this);
       
       gsap.to(this, {
-        y: -40,
-        duration: 1,
+        y: -80,
+        duration: 0.5,
       });
     });
 
@@ -69,7 +69,7 @@ $(document).ready(function () {
       console.log("you're leaving: " + $(this).text());
       gsap.to(this, {
         y: 0,
-        duration: 1,
+        duration: 0.5,
       });
     });
   });
@@ -86,8 +86,8 @@ $(document).ready(function () {
     $(this).on("mouseenter", function () {
       console.log("you're in: " + $(this).text());
       gsap.to(this, {
-        y: -40,
-        duration: 1,
+        y: -80,
+        duration: 0.5,
       });
     });
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
       console.log("you're leaving: " + $(this).text());
       gsap.to(this, {
         y: 0,
-        duration: 1,
+        duration: 0.5,
       });
     });
   });
