@@ -1,12 +1,10 @@
 $(document).ready(function () {
-
-  
-  const scroll = new LocomotiveScroll({
+  const locoScroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
     lerp: 0.05,
   });
-
+// console.log(locoScroll)
   $(".navbar a").on("click", function (e) {
     e.preventDefault();
 
@@ -21,9 +19,12 @@ $(document).ready(function () {
       $(this).addClass("activeLink"); // Add active class to clicked link
       console.log("Link clicked:", $(this).attr("href")); // Log clicked link
       console.log($target);
-      scroll.scrollTo($target[0]);
+      locoScroll.scrollTo($target[0]);
     } else {
       console.error(`Invalid target: ${targetID}`);
     }
   });
+
+  window.locoScroll = locoScroll;
+  
 });

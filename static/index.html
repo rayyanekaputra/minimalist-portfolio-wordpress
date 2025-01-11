@@ -16,20 +16,20 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
 " rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
- <script src="https://cdn.jsdelivr.net/gh/sarathsaleem/grained@master/grained.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sarathsaleem/grained@master/grained.js"></script>
 </head>
 
-<body data-scroll-container id = "grained">
+<body data-scroll-container>
     <!-- Navbar -->
     <ul class="navbar sticky">
         <li>
-            <h2><a href="#home" class="activeLink">Home</a></h2>
+            <h2><a href="#home" class="navbar-text activeLink">Home</a></h2>
         </li>
         <li>
-            <h2><a href="#work" id="workId">Work</a></h2>
+            <h2><a href="#work" class="navbar-text" id="workId">Work</a></h2>
         </li>
         <li>
-            <h2><a href="#footer">Contact</a></h2>
+            <h2><a href="#footer " class="navbar-text">Contact</a></h2>
         </li>
     </ul>
     <ul class="navbar-mobile">
@@ -46,11 +46,11 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
 
     <!-- Hero  -->
-    <section data-scroll-section class="hero" id="home">
+    <section data-scroll data-scroll-call="showHero" data-scroll-section class="hero fade" id="home">
         <div class="rayyan-container">
 
-            <h1 id='rayyan' class="rayyan">Rayyan</h1>
-            <h1 id='eka' class="rayyan">Eka Putra</h1>
+            <h1  class="rayyan">Rayyan</h1>
+            <h1  class="rayyan">Eka Putra</h1>
         </div>
         <div class="hero-description">
             <div class="hero-cols 1">
@@ -77,10 +77,10 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
         </div>
     </section>
     <!-- Work -->
-    <section data-scroll-section class="work grid" id="work">
-        <div class="boxes">Box 1</div>
-        <div class="boxes">Box 2</div>
-        <div class="boxes">Box 3</div>
+    <section data-scroll data-scroll-call="showWork" data-scroll-section class="work grid fade" id="work">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
         <div class="boxes"></div>
         <div class="boxes"></div>
         <div class="boxes"></div>
@@ -97,7 +97,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
     </section>
     <!-- footer -->
-    <section data-scroll-section class="footer" id="footer">
+    <section data-scroll data-scroll-call="showFooter" data-scroll-section class="footer fade" id="footer">
         <ul class="footer-socials">
             <li><a href="https://www.linkedin.com/in/rayyan-eka-putra/" target="_blank">
                     <p>Linkedin</p>
@@ -112,10 +112,10 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
         <p class="credit">proudly created by rayyan ©</p>
     </section>
 
-
     <script src="navbarAndScrolls.js"></script>
     <script src="hoverAnimation.js"></script>
-    <script src="noise.js"></script>
+    <script src="earlyFade.js"></script>
+    <!-- <script src="noise.js"></script> -->
 
 </body>
 
