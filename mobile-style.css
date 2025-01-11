@@ -1,0 +1,110 @@
+/* ceritanya masih desktop sini */
+
+.navbar-mobile {
+  display: none;
+}
+
+/* mobile mi */
+@media only screen and (max-width: 1080px) {
+  .navbar {
+    display: none;
+
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+
+  .footer-socials {
+    column-gap: 20px;
+  }
+
+  body {
+    /* background-color: red; */
+    padding: 0px 20px;
+  }
+
+  h1 {
+    font-size: 120px;
+    width: 600px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    column-gap: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    /* background-color: red; */
+    padding: 0px 20px;
+  }
+
+
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* justify-content: space-between; */
+  }
+
+  .hero-description p {
+    max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    /* background-color: red; */
+    padding: 0px 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: orange; */
+    padding: 0px 20px;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 60px;
+    width: 320px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p.credit {
+    width: 120px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
