@@ -4,7 +4,7 @@ $(document).ready(function () {
         "patternWidth": 600,
         "patternHeight": 600,
         "grainOpacity": 0.15,
-        "grainDensity": 1,
+        "grainDensity": 1.5,
         "grainWidth": 0.7,
         "grainHeight": 0.7,
       }
